@@ -1,0 +1,13 @@
+{:paths ["src" "resources"]
+ :deps
+ {
+  ;; XML parsing related dependencies
+  org.clojure/data.xml {:mvn/version "0.2.0-alpha6"} ;; "0.0.8" doesn't have namespace support.
+  com.roomkey/xml {:mvn/version "2.1.0"}}
+ :aliases
+ {:dev {}}
+ :mvn/repos
+ {"rk-maven" {:url "s3p://rk-maven/releases/"}
+  "central" {:url "https://repo1.maven.org/maven2/"}
+  "clojars" {:url "https://clojars.org/repo"}
+  }}
